@@ -34,8 +34,8 @@ jobs:
         file: ./infra/prod/front/Dockerfile
         build-args: |
           REACT_APP_API_URL=https://crm-api.digitallync.ai
-          REACT_APP_FILES_URL=https://crm-api.digitallync.ai
-          REACT_APP_AUTH_URL=https://crm-api.digitallync.ai
+          REACT_APP_FILES_URL=https://crm-api.digitallync.ai/files
+          REACT_APP_AUTH_URL=https://crm-api.digitallync.ai/auth
 
   deploy:
     runs-on: ubuntu-latest
