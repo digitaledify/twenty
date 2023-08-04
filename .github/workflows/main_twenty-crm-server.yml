@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: digitallyncaicr.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_bdc93ec1308348a49d0114ad55699c46 }}/twenty-crm-server:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./infra/prod/server/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
