@@ -32,6 +32,7 @@ jobs:
         push: true
         tags: digitallyncaicr.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_aec6b6ba9ae24b5a8ba3da1605c97806 }}/twenty-crm-frontend:${{ github.sha }}
         file: ./infra/prod/front/Dockerfile
+        build-args: REACT_APP_API_URL=https://crm.digitallync.ai, REACT_APP_FILES_URL=https://crm.digitallync.ai, REACT_APP_AUTH_URL=https://crm.digitallync.ai
 
   deploy:
     runs-on: ubuntu-latest
