@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: digitallyncaicr.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_aec6b6ba9ae24b5a8ba3da1605c97806 }}/twenty-crm-frontend:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./infra/prod/front/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
